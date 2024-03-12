@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, main {
+            margin: 20px;
+        }
+
+        header h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .menu {
+            text-align: center;
+        }
+
+        .menu img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Image Links</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website! Check out our latest technology image:</p>
+            <a href="https://example.com/laptop"><img src="laptop.jpg" alt="Laptop Image"></a>
+        </section>
+        
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="https://example.com/forest"><img src="forest.jpg" alt="Forest Image "></a>
+                <a href="https://example.com/lake"><img src="lake.jpg" alt="Lake Image "></a>
+                <a href="https://example.com/valley"><img src="valley.jpg" alt="Valley Image "></a>
+            </div>
+        </section>
+        
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu">
+                <div>
+                    <img src="rice.jpg" alt="Rice Image">
+                    <p><a href="https://example.com/rice">Rice</a></p>
+                </div>
+                <div>
+                    <img src="meat.jpg" alt="Meat Image">
+                    <p><a href="https://example.com/meat">Meat</a></p>
+                </div>
+                <div>
+                    <img src="juice.jpg" alt="Juice Image">
+                    <p><a href="https://c:\Users\HP\Downloads\Juice image.jpg">Juice</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
